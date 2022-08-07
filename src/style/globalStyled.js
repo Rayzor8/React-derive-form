@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const COLORTEXT = Object.freeze({
   green: "#4caf50",
+  red: "#f44336",
+  blue: "midnightblue",
 });
 
 export const GlobalStyled = styled.div`
@@ -32,7 +34,7 @@ export const StylLabel = styled.label`
 `;
 
 export const StylBtn = styled.button`
-  background-color: ${COLORTEXT.green};
+  background-color: ${({bgColor}) => bgColor};
   border: none;
   color: white;
   padding: 8px 1rem;
@@ -61,4 +63,9 @@ export const StylInputContainer = styled.div`
 
 export const StylFormTitle = styled.h3`
   color: ${COLORTEXT.green};
+`;
+
+export const StylText = styled.h5`
+  color: ${COLORTEXT.blue};
+  margin-bottom: 4px;
 `;

@@ -7,6 +7,7 @@ import {
   StylInputContainer,
   StylFormTitle,
 } from "../../../style/globalStyled";
+import { COLORTEXT } from "../../../style/globalStyled";
 
 const FormOne = () => {
   const [input, setInput] = React.useState({
@@ -61,7 +62,7 @@ const FormOne = () => {
           onChange={onChange}
         />
       </StylInputContainer>
-      <StylBtn type="submit">Submit</StylBtn>
+      <StylBtn type="submit" bgColor={COLORTEXT.green}>Submit</StylBtn>
     </StylForm>
   );
 };
