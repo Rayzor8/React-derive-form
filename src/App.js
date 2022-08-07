@@ -1,14 +1,15 @@
 import "./App.css";
-import { FormOne } from "./components/FormOne";
-import { FormTwo } from "./components/FormTwo";
+import FormOne from "./components/Form/FormOne";
+import FormTwo from "./components/Form/FormTwo";
+import { GlobalStyled } from "./style/globalStyled";
 
 function App() {
   return (
-    <div className="App">
-      <FormOne />
+    <GlobalStyled className="App">
+      <FormOne/>
       <br/>
       <FormTwo/>
-    </div>
+    </GlobalStyled>
   );
 }
 

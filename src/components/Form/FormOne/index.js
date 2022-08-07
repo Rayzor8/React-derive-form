@@ -1,3 +1,2 @@
 import FormOne from "./FormOne";
-
-export { FormOne};
+export default FormOne;
